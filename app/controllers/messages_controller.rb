@@ -42,7 +42,7 @@ class MessagesController < ApplicationController
   
   def destroy
     @message = Message.find(params[:id])
-    @message.destory
+    @message.destroy
     
     flash[:success] = 'Message は正常に削除されました'
     redirect_to messages_url
